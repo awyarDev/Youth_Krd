@@ -1,0 +1,486 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    padding: 10px 30px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    color: black;
+    justify-content: space-around;
+    background-color: rgba(249, 250, 251, .5);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.084);
+    backdrop-filter: blur(12px);
+    position: relative;
+    height: 70px;
+    direction: rtl;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+nav ul {
+    margin: 0;
+    color: black;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+
+}
+
+nav ul li a:hover {
+    color: rgb(0 125 254);
+
+}
+
+.menu-icon {
+    display: none;
+}
+
+.menu-icon i {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+}
+
+.logo img {
+    width: 135px;
+}
+
+@media (max-width:600px) {
+    nav {
+        gap: 89px;
+    }
+
+    nav ul {
+
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background-color: #ffffffe6;
+        backdrop-filter: blur(12px);
+        gap: 0;
+        overflow: hidden;
+    }
+
+    nav ul li {
+        padding: 20px;
+        padding-top: 10;
+        font-size: 21px;
+
+    }
+
+
+
+    .menu-icon {
+        display: block;
+    }
+
+    #menuList {
+        transition: all 0.5s;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        justify-content: center;
+        margin-top: -70px;
+        margin-right: 33px;
+        padding-left: 29px;
+        justify-items: center;
+
+    }
+
+    header .wenaka {
+        margin-top: -140px;
+        padding-right: -40px;
+
+
+    }
+
+    .wenaka img {
+        position: relative;
+        margin-right: -30px;
+
+    }
+
+    .row {
+
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+
+
+        gap: 0px;
+
+    }
+
+    .col-md-3 {
+        justify-items: center;
+
+    }
+
+}
+
+.card {
+
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.073);
+}
+
+@font-face {
+    font-family: kurd;
+    src: url(./Fonts/Rabar_022\ \(1\).ttf);
+}
+
+@font-face {
+    font-family: kurd_bold;
+    src: url(./Fonts/RABAR_2.TTF);
+}
+
+* {
+    font-family: kurd;
+}
+
+::selection {
+    color: rgb(0, 0, 0);
+    background: rgba(0, 127, 254, 0.311);
+}
+
+:root {
+    --blue-color: #001f44;
+    --red-color: #e01929;
+    --white-color: #f5f5fa;
+    --color-white-2: rgba(162, 185, 197, 0.05);
+    --gray-color: #ddd;
+}
+
+
+
+
+
+.zyada {
+    width: 100%;
+    height: 11vh;
+    background-color: rgb(255, 255, 255);
+}
+
+
+header {
+    direction: rtl;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+
+}
+
+.texthead {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 54vh;
+}
+
+header .wenaka {
+    width: 450px;
+}
+
+header .wenaka img {
+    width: 450px;
+}
+
+header div div h1 {
+    color: rgb(0 125 254);
+    font-family: kurd_bold;
+    margin-bottom: 12px;
+}
+
+header div div h3 {
+    color: rgb(116, 130, 145);
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.nawbr {
+    height: 1px;
+    max-width: 80%;
+    margin: 0 auto;
+    background-color: #a0989855;
+}
+
+
+.simititle {
+    height: 1px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin: 17px 0 17px 0;
+}
+
+.simititle h3 {
+    text-align: center;
+    color: #aaa8a8;
+    font-size: 21px;
+}
+
+
+
+article {
+    --img-scale: 1.001;
+    --title-color: black;
+    --link-icon-translate: -20px;
+    --link-icon-opacity: 0;
+    position: relative;
+    border-radius: 16px;
+    box-shadow: none;
+    background: #fff;
+    transform-origin: center;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+}
+
+article a::after {
+    position: absolute;
+    inset-block: 0;
+    inset-inline: 0;
+    cursor: pointer;
+    content: "";
+}
+
+/* basic article elements styling */
+article h2 {
+    margin: 0 0 18px 0;
+    direction: rtl;
+    font-family: kurd_bold;
+    font-size: 1.9rem;
+    letter-spacing: 0.06em;
+    color: var(--title-color);
+    transition: color 0.3s ease-out;
+
+}
+
+article p {
+    direction: rtl;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+article img {
+    max-width: 100%;
+    transform-origin: center;
+    transform: scale(var(--img-scale));
+    transition: transform 0.4s ease-in-out;
+}
+
+.article-body {
+    padding: 24px;
+}
+
+article a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(0 125 254);
+}
+
+article a:focus {
+    outline: 1px dotted #000000;
+}
+
+article a .icon {
+    min-width: 24px;
+    width: 24px;
+    height: 24px;
+    margin-left: 5px;
+    transform: translateX(var(--link-icon-translate));
+    opacity: var(--link-icon-opacity);
+    transition: all 0.3s;
+}
+
+/* using the has() relational pseudo selector to update our custom properties */
+article:has(:hover, :focus) {
+    --img-scale: 1.1;
+    --title-color: rgb(0 125 254);
+    --link-icon-translate: 0;
+    --link-icon-opacity: 1;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+
+.articles {
+    margin-top: 40px;
+    display: grid;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
+}
+
+@media screen and (max-width: 960px) {
+    article {
+        container: card/inline-size;
+    }
+
+    .article-body p {
+        display: none;
+    }
+}
+
+@container card (min-width: 380px) {
+    .article-wrapper {
+        display: grid;
+        grid-template-columns: 100px 1fr;
+        gap: 16px;
+
+    }
+
+    .article-body {
+        padding-left: 0;
+    }
+
+    figure {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    figure img {
+        height: 100%;
+        aspect-ratio: 1;
+        object-fit: cover;
+    }
+}
+
+.sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.container {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0px;
+    direction: rtl;
+
+}
+
+.card {
+    margin-top: 25px;
+    max-width: 18rem;
+}
+
+.card-img-top {
+    height: 180px;
+    object-fit: cover;
+}
+
+.saraky {
+    color: rgb(0 125 254);
+}
+
+.card_btns {
+    background-color: white;
+    margin: 0 15px 15px 0;
+    border: none;
+    color: rgb(0 125 254);
+    text-align: right;
+}
+
+.footer {
+    background-color: #ffffffe6;
+    backdrop-filter: blur(12px);
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.166);
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+.footer .links {
+    margin-bottom: 10px;
+}
+
+.footer .links a {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.footer .links a:hover {
+    color: rgb(0 125 254);
+}
+
+.footer .social-icons {
+    margin-top: 10px;
+}
+
+.lgo {
+    width: 110px;
+}
+
+.footer .social-icons a {
+    color: #000000;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.footer .social-icons a:hover {
+    color: rgb(0 125 254);
+}
+
+p span {
+    color: rgb(0 125 254);
+    font-size: larger;
+    font-weight: 400;
+}
+
+@media (max-width: 600px) {
+    .footer {
+        padding: 15px;
+    }
+}
